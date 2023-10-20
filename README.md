@@ -1,10 +1,11 @@
 # create-svelte
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+A CRUD application based on the web for a product management  system using Svletekit and firebase
 
-## Creating a project
+## Folder Structure
+Yenneta_Crud is the root folder 
+  in there, theres routes that contain the hompage and the dynamic route for the editing 
 
-If you're seeing this, you've probably already done this step. Congrats!
 
 ```bash
 # create a new project in the current directory
