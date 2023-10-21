@@ -25,7 +25,7 @@ Follow these instructions to get the project up and running on your local machin
 1. Clone the repository to your local machine:
 
    ```sh
-   git clone https://github.com/getaseww/Yenetta-Code-Bootcamp-Test.git
+   git clone https://github.com/Brooksolomon/Yenetta_CRUD.git
 2. Npm install to get all the dependencies:
    ```sh
    npm install
