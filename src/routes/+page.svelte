@@ -1,14 +1,25 @@
 <script>
 	import { RadioGroup, RadioItem } from '@skeletonlabs/skeleton';
+	import { RangeSlider } from '@skeletonlabs/skeleton';
 function submitForm(event){
    //Preventing page refresh
    event.preventDefault();
    }
 export let data
 const {products} = data
+let searchVal = products
+const searchProducts = () => {	
+		return searchVal = products.filter(product => {
+			let la = product.name.toLowerCase();
+			return la.includes(searchInput.toLowerCase())
+		});
+}
+
 
 //category choice
 let value = 0;
+
+let searchInput = '';
 </script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<h1 class="text-center text-4xl mt-8 font-mono">Product Management System</h1>
@@ -51,6 +62,16 @@ let value = 0;
 		</div>
 		<div class="mt-12 font-mono">
 			<div class="mb-8">
+				
+				<input
+					class="input autocomplete"
+					type="search"
+					name="autocomplete-search"
+					bind:value={searchInput}
+					placeholder="Search..."
+					on:input={searchProducts}
+				/>
+				<br><br>
 				<!--The toogle between in-stock and out of stock items to group them-->
 				<RadioGroup active="variant-filled-primary" hover="hover:variant-soft-primary">
 					<RadioItem bind:group={value} name="justify" value={0}>All</RadioItem>
@@ -73,7 +94,7 @@ let value = 0;
 					</tr>
 				</thead>
 				<tbody>
-					{#each products as p }
+					{#each searchVal as p }
 						{#if p.in_stock && value!=2}
 						<tr class="table-row-checked">
 							<td>{p.name}</td>
