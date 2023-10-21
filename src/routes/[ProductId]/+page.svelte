@@ -54,7 +54,7 @@ $: toggleOn = data.in_stock
         </div>
         <div class="text-center">
             <a href="/">
-                <button  class="btn variant-filled-surface w-48 hover:variant-filled-primary text-center" >go back</button>
+                <button  class="btn variant-filled-surface w-48 hover:variant-filled-primary text-center" >Cancel</button>
             </a>
             <button type="submit" class="btn variant-filled-primary w-48 hover:variant-filled-surface text-center ml-8">Update product</button>
         </div>
