@@ -4,37 +4,38 @@ A CRUD application based on the web for a product management  system using Svlet
 
 ## Folder Structure
 - **Yenetta-CRUD:** The root folder of the project.
-  - **src:** Where all the code is located.
+  - **src:** containing a sub folder of all the material used.
     - **Lib:** library files if needed(didint use any so empty).
+    - **Routes:** The location for the Main page code and in a sub folder the code for the dynamic route.
+## Getting Started
 
+Follow these instructions to get the project up and running on your local machine.
+### Prerequisites
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+- Node.js: Make sure you have Node.js installed on your machine.
+### Setup
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+1. Clone the repository to your local machine:
 
-## Developing
+   ```sh
+   git clone https://github.com/getaseww/Yenetta-Code-Bootcamp-Test.git
+2. Npm install to get all the dependencies:
+   ```sh
+   npm install
+3. Start the development server:
+    ```bash
+    npm run dev
+    ```
+   or start the server and open the app in a new browser tab
+   ```bash
+    npm run dev -- --open
+    ```
+4. Building
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
+    To create a production version of The app:
+    
+    ```bash
+    npm run build
+    ```
 
 You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
