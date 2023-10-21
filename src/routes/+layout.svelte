@@ -1,6 +1,7 @@
 <script>
 	import '../app.postcss';
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
+	import { LightSwitch } from '@skeletonlabs/skeleton';
 </script>
 
 <!-- App Shell -->
@@ -9,9 +10,10 @@
 		<!-- App Bar -->
 		<AppBar>
 			<svelte:fragment slot="lead">
-				<strong class="text-2xl uppercase text-mono">Brook Solomon</strong>
+				<strong class="text-2xl uppercase text-mono text-primary">Brook Solomon</strong>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
+				<LightSwitch bgDark='bg-primary-900'/>
 				<a
 					class="btn btn-sm variant-ghost-surface"
 					href="https://github.com/Brooksolomon"

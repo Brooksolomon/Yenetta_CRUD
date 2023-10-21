@@ -1,4 +1,5 @@
 <script>
+    
 import { SlideToggle, getToastStore } from '@skeletonlabs/skeleton';
 import {goto} from '$app/navigation'
 //fetching data form the back end
@@ -6,6 +7,7 @@ export let data
 //reactive variable
 $: toggleOn = data.in_stock
 </script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <div class="text-center font-mono text-xl">
     <h1 class='mt-8'>IN-STOCK</h1>
 
@@ -25,28 +27,28 @@ $: toggleOn = data.in_stock
             <label class="label font-mono text-2xl">
                 <span class="mb-96">Product name</span>
                 <br>
-                <input class="input w-96" title="Input (text)" type="text" placeholder="Eg. Xiaomi" required name='name' value={data.name} />
+                <input class="input w-96" title="Input (text)" type="text" placeholder="Eg. Xiaomi" required name='name' value={data.name} autocomplete="off"/>
                 <br><br>
             </label>
 
             <label class="label font-mono text-2xl">
                 <span>Descripton</span>
                 <br>
-                <textarea class="textarea w-96" rows="4" placeholder="Eg. Android phone made in china" required name='description' value={data.description}/>
+                <textarea class="textarea w-96" rows="4" placeholder="Eg. Android phone made in china" required name='description' value={data.description} autocomplete="off"/>
                 <br><br>
             </label>
 
             <label class="label font-mono text-2xl">
                 <span>Price</span>
                 <br>
-                <input class="input w-96" title="Input (text)" type="text" placeholder="Eg. 20000"required name='price' value={data.price}/>
+                <input class="input w-96" title="Input (number)" type="number" placeholder="Eg. 20000"required name='price' value={data.price} autocomplete="off"/>
                 <br><br>
             </label>
 
             <label class="label font-mono text-2xl">
                 <span>Quantity in stock</span>
                 <br>
-                <input class="input w-96" title="Input (text)" type="text" placeholder="Eg. 4" required name='quantity' value={data.quantity}/>
+                <input class="input w-96" title="Input (number)" type="number" placeholder="Eg. 4" required name='quantity' value={data.quantity} autocomplete="off"/>
                 <br><br>
             </label>
         </div>
@@ -54,7 +56,7 @@ $: toggleOn = data.in_stock
             <a href="/">
                 <button  class="btn variant-filled-surface w-48 hover:variant-filled-primary text-center" >go back</button>
             </a>
-            <button type="submit" class="btn variant-filled-primary w-48 hover:variant-filled-surface text-center ml-8" on:click={()=>goto('/')} >Update product</button>
+            <button type="submit" class="btn variant-filled-primary w-48 hover:variant-filled-surface text-center ml-8">Update product</button>
         </div>
     </form>
 
@@ -64,4 +66,16 @@ $: toggleOn = data.in_stock
 		display: grid;
 		grid-template-columns: auto auto ;
 	}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    appearance:none;
+  -moz-appearance: textfield;
+}
+
 </style>

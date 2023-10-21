@@ -10,6 +10,7 @@ const {products} = data
 //category choice
 let value = 0;
 </script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<h1 class="text-center text-4xl mt-8 font-mono">Product Management System</h1>
 	<div class="mygrid">
 		<div class="inputs text-left mt-8 ml-8">
@@ -19,28 +20,28 @@ let value = 0;
 				<label class="label font-mono">
 					<span class="mb-40">Product name</span>
 					<br>
-					<input class="input w-96" title="Input (text)" type="text" placeholder="Eg. Xiaomi" required name='name' />
+					<input class="input w-96" title="Input (text)" type="text" placeholder="Eg. Xiaomi" required name='name'autocomplete="off" />
 					<br><br>
 				</label>
 
 				<label class="label font-mono">
 					<span>Descripton</span>
 					<br>
-					<textarea class="textarea w-96" rows="4" placeholder="Eg. Android phone made in china" required name='description'/>
+					<textarea class="textarea w-96" rows="4" placeholder="Eg. Android phone made in china" required name='description' autocomplete="off"/>
 					<br><br>
 				</label>
 
 				<label class="label font-mono">
 					<span>Price</span>
 					<br>
-					<input class="input w-96" title="Input (text)" type="text" placeholder="Eg. 20000"required name='price'/>
+					<input class="input w-96" title="Input (number)" type="number" placeholder="Eg. 20000"required name='price' autocomplete="off"/>
 					<br><br>
 				</label>
 
 				<label class="label font-mono">
 					<span>Quantity in stock</span>
 					<br>
-					<input class="input w-96" title="Input (text)" type="text" placeholder="Eg. 4" required name='quantity'/>
+					<input class="input w-96" title="Input (number)" type="number" placeholder="Eg. 4" required name='quantity' autocomplete="off"/>
 					<br><br>
 				</label>
 
@@ -112,8 +113,19 @@ let value = 0;
 	</div>
 </div>
 <style>
-	.mygrid{
-		display: grid;
-		grid-template-columns: auto auto auto;
-	}
+.mygrid{
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 </style>
