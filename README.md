@@ -2,6 +2,8 @@
   ![Screenshot (671)](https://github.com/Brooksolomon/Yenetta_CRUD/assets/147744730/5c06f34c-5142-4c43-881a-b51be035eabe)
   ![Screenshot (672)](https://github.com/Brooksolomon/Yenetta_CRUD/assets/147744730/f8ff2864-6521-44a5-8ab1-95c00b4e079c)
 
+# Link
+  https://yenetta-clone.vercel.app/
 
 # Description
 
