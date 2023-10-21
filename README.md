@@ -3,8 +3,9 @@
 A CRUD application based on the web for a product management  system using Svletekit and firebase
 
 ## Folder Structure
-Yenneta_Crud is the root folder 
-  in there, theres routes that contain the hompage and the dynamic route for the editing 
+- **Yenetta-CRUD:** The root folder of the project.
+  - **src:** Where all the code is located.
+    - **Lib:** library files if needed(didint use any so empty).
 
 
 ```bash
