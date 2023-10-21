@@ -1,4 +1,4 @@
-# create-svelte
+# Description
 
 A CRUD application based on the web for a product management  system using Svletekit and firebase
 
